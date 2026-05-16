@@ -97,8 +97,7 @@ drop table product_catalog ;
 
 Select * from product_catalog ;
 
-CREATE TABLE inventory_stock
-(
+CREATE TABLE inventory_stock(
     idx INTEGER,
     sku_code VARCHAR(30),
     design_no VARCHAR(20),
@@ -108,4 +107,9 @@ CREATE TABLE inventory_stock
     color VARCHAR(100)
 );
 
+Select * from inventory_stock ;
 
+
+Select distinct(order_id) from amazon_Sales_report;
+Select distinct(idx) from amazon_Sales_report;
+select * from inc
